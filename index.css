@@ -1,0 +1,27 @@
+/* Mobile design */
+
+.hero-section {
+  width: 100%;
+  background-color: #141414;
+  display: flex;
+  flex-direction: column;
+}
+.title-hero{
+    color: #FFF;
+font-family: Epilogue;
+font-size: 38px;
+font-style: normal;
+font-weight: 600;
+line-height: 40px; /* 105.263% */
+letter-spacing: -1.52px;
+}
+
+.description-hero{
+    color: #FFF;
+font-family: Epilogue;
+font-size: 14px;
+font-style: normal;
+font-weight: 300;
+line-height: 18px; /* 128.571% */
+letter-spacing: -0.28px;
+}
