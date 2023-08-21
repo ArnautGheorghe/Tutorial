@@ -7,52 +7,43 @@
       content="Noțiuni de bază în HTML5 pentru începători" />
     <title>HTML5 este ușor!</title>
     <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-/>
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   </head>
   <body>
     <section class="hero-section">
       <div class="title-hero">
         <h1>Welcome to our collection of premium watches</h1>
       </div>
-      <div class="carusel">
-
-<!-- Slider main container -->
-<div class="swiper">
-  <!-- Additional required wrapper -->
-  <div class="swiper-wrapper">
-    <!-- Slides -->
-    <div class="swiper-slide">1
-      <img src="./images/watch-1.png" alt="">
-    </div>
-    <div class="swiper-slide">2
-      <img src="./images/watch-2.png" alt="">
-    </div>
-    <div class="swiper-slide">3
-      <img src="./images/watch-3.png" alt="">
-    </div>
-    <div class="swiper-slide">4
-      <img src="./images/watch-4.png" alt="">
-    </div>
-    <div class="swiper-slide">5
-      <img src="./images/watch-5.png" alt="">
-    </div>
-  </div>
-  <!-- If we need pagination -->
-  <div class="swiper-pagination"></div>
-
-  <!-- If we need navigation buttons -->
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
-
-  <!-- If we need scrollbar -->
-  <div class="swiper-scrollbar"></div>
-</div>
-
-
-
+      <div class="image-section">
+        <div class="static-image">
+          <img src="./images/static-watch-image.png" alt="watch" />
+        </div>
+        <div class="buttons-section">
+          <div class="buttons">
+            <div class="btn-left">
+              <svg>
+                  <use href="./icon/symbol-defs.svg#iconscircle-left"></use>
+                </svg>
+            </div>
+            <div class="btn-right"><svg>
+                  <use href="./icon/symbol-defs.svg#iconscircle-right"></use>
+                </svg></div>
+          </div>
+          <div class="number-show">
+            <div class="nmb number-first">01</div>
+            <div class="nmb number-line">
+              <svg>
+                  <use href="./icon/symbol-defs.svg#line"></use>
+                </svg>
+            </div>
+            <div class="nmb number-second">05</div>
+          </div>
+        </div>
       </div>
       <div class="description-hero">
         <p>
@@ -62,56 +53,11 @@
         </p>
       </div>
       <div class="presentation-image-hero">
-        <picture>
-          <!--Mobile-->
-          <source
-            media="(max-width:768px)"
-            srcset="
-              ./images/prezentare-ceas-mob.jpg,
-              ./images/prezentare-ceas-mob-2x.jpg
-            " />
-
-          <!-- Tablet -->
-          <source
-            media="(max-width:1280px)"
-            srcset="
-              ./images/prezentare-ceas-tab.jpg,
-              ./images/prezentare-ceas-tab-2x.jpg
-            " />
-
-          <!-- Desktop -->
-          <source 
-            srcset="./images/prezentare-ceas-dsk.jpg, ./prezentare-ceas-dsk-2x.jpg" />
+        
 
           <img src="./images/prezentare-ceas-dsk.jpg" alt="prezentare ceas" />
-        </picture>
+        
       </div>
     </section>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-
-
-   <script> const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  direction: 'orizontal',
-  loop: true,
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
-});
-</script>
   </body>
 </html>
