@@ -26,6 +26,17 @@ line-height: 18px; /* 128.571% */
 letter-spacing: -0.28px;
 }
 
+.swiper {
+  width: 600px;
+  height: 300px;
+ 
+}
+.swiper-slide img{
+  width: 50%;
+  height: auto;
+}
+
+
 /* Tablet dedsign */
 @media screen and (min-width: 768px){
 
@@ -36,5 +47,5 @@ letter-spacing: -0.28px;
 /* Desktop design */
 @media screen and (min-width: 1280px){
 
-  
+
 }
